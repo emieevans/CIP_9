@@ -13,7 +13,11 @@ public class Program {
         cliente.setEdad(21);
         cliente.setTelefono("6545-9878");
         cliente.setCredito(1200.00);
-        trabajador.setSalario(3245.00);
+
+        trabajador.setNombre("Hernan");
+        trabajador.setEdad(43);
+        trabajador.setTelefono("6756-9089");
+        trabajador.setSalario(3245.50);
 
         //Obtener valores
         nombre = cliente.getNombre();
@@ -23,11 +27,14 @@ public class Program {
         salario = trabajador.getSalario();
 
         //Mostrar en pantalla
+        System.out.println("--------------CLIENTE---------------");
         System.out.println("Nombre: "+ nombre);
         System.out.println("Edad: "+edad);
         System.out.println("Teléfono: "+telefono);
         System.out.println("Credito: "+credito);
-        System.out.println("Salario: "+salario);
+
+        System.out.println("------------TRABAJADOR------------");
+        System.out.println("Nombre: "+trabajador.nombre+ "\nEdad: "+ trabajador.edad+"\nTelefono: "+trabajador.telefono +"\nSalario: "+salario);
     }
     static public class Persona{
         int edad;
